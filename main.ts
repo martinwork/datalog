@@ -12,7 +12,7 @@ input.onButtonPressed(Button.B, function () {
 })
 let logging = 0
 datalogger.includeTimestamp(FlashLogTimeStampFormat.Milliseconds)
-datalogger.mirrorToSerial(true)
+datalogger.mirrorToSerial(false)
 datalogger.setColumns(["pitch", "roll", "light"])
 logging = 0
 basic.forever(function () {
